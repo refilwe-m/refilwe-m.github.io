@@ -1,0 +1,174 @@
+/*
+Styles are sorted alphabetically under these categories
+1. TAGS
+2. IDS
+3. CLASSES
+*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   T  A G S 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+body {
+  background-color: #222222;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+}
+
+h1 {
+  font-family: Tahoma;
+}
+
+h4 {
+  text-align: center;
+}
+
+footer {
+  padding-top: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  background-color: rgb(24, 27, 27);
+}
+
+/*Style Select*/
+
+ul {
+  display: flex;
+  float: right;
+  margin: 0;
+  height: 30px;
+}
+
+ul li {
+  display: inline;
+  padding-right: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+:last-child ul {
+  margin-right: 50px;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 0 50x;
+  display: block;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   I D s 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#avatar {
+  width: 200px;
+}
+
+#container {
+  display: grid;
+  grid-template-rows: 2fr 15fr 10fr 2fr;
+  grid-gap: 10px;
+}
+
+#info {
+  display: grid;
+  grid-template-columns: 25% 50% 20%;
+  grid-gap: 10px;
+}
+
+#input {
+  width: 20%;
+  color: white;
+  outline: none;
+  box-shadow: inset 0 -3px 0 0 rgb(133, 139, 139);
+  border: none;
+  padding: 15px 5px;
+  border-radius: 25px;
+  background: rgba(224, 214, 214, 0.1);
+}
+
+#logo {
+  float: left;
+  margin: 0;
+  margin-left: 50px;
+  display: flex;
+  width: 60px;
+}
+
+#main {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#nav {
+  display: inline;
+  background-color: rgb(24, 27, 27);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+             C L A S S E S
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.box {
+  background: rgb(24, 27, 27);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(58, 50, 50, 0.3);
+  margin: 10px;
+}
+
+.button {
+  color: #fff;
+  display: inline;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 25px;
+  background: rgb(61, 223, 12);
+}
+
+.icon {
+  width: 50px;
+}
+
+.content {
+  align-items: center;
+  margin-bottom: 1px;
+  margin-right: 1px;
+ 
+}
+
+.description {
+  display: flex;
+}
+
+.fas,
+.far {
+  color: white;
+}
+
+.icon {
+  width: 50px;
+}
+
+.item {
+  display: block;
+  align-items: center;
+  border-bottom: 3px solid #a70972;
+}
+
+.nav_icon {
+  margin: 0;
+}
+
+.project-snap {
+  text-align: center;
+}
+
+.tag {
+  display: inline;
+  border-radius: 30px;
+  background-color: #222222;
+  padding: 5px 5px;
+  text-decoration: none;
+}
