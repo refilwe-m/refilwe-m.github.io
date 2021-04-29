@@ -115,7 +115,7 @@ ul li a {
   background: rgb(24, 27, 27);
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px rgba(58, 50, 50, 0.3);
-  margin: 10px;
+  padding: 20px;
 }
 
 .button {
@@ -135,7 +135,6 @@ ul li a {
   align-items: center;
   margin-bottom: 1px;
   margin-right: 1px;
- 
 }
 
 .description {
@@ -171,4 +170,5 @@ ul li a {
   background-color: #222222;
   padding: 5px 5px;
   text-decoration: none;
+  margin: 5px;
 }
