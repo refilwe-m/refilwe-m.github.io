@@ -19,6 +19,26 @@ body {
 
 h1 {
   font-family: Tahoma;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 4.5s steps(70),
+    blink-caret .75s infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 38% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
 
 h4 {
@@ -68,14 +88,32 @@ ul li a {
 
 #container {
   display: grid;
-  grid-template-rows: 2fr 15fr 10fr 2fr;
+  grid-template-rows: 2fr 17fr 10fr 2fr;
   grid-gap: 10px;
+}
+
+#gallery{
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 120px;
+  grid-gap: 5px;
 }
 
 #info {
   display: grid;
   grid-template-columns: 25% 50% 20%;
   grid-gap: 10px;
+}
+
+
+
+#info-links{
+  float: none;
+  display: inline;
+}
+
+#info-nav{
+  text-align: center;
 }
 
 #input {
@@ -127,9 +165,7 @@ ul li a {
   background: rgb(61, 223, 12);
 }
 
-.icon {
-  width: 50px;
-}
+
 
 .content {
   align-items: center;
@@ -150,6 +186,11 @@ ul li a {
   width: 50px;
 }
 
+.info-item:hover{
+  background: rgb(24, 27, 27); 
+  padding: 15px;
+}
+
 .item {
   display: block;
   align-items: center;
@@ -159,6 +200,8 @@ ul li a {
 .nav_icon {
   margin: 0;
 }
+
+
 
 .project-snap {
   text-align: center;
