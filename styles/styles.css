@@ -146,6 +146,10 @@ ul li a {
   background-color: rgb(24, 27, 27);
 }
 
+#profile-pic{
+  width:25px;
+}
+
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
              C L A S S E S
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -168,13 +172,33 @@ ul li a {
 
 
 .content {
-  align-items: center;
+  
   margin-bottom: 1px;
   margin-right: 1px;
 }
 
 .description {
   display: flex;
+}
+
+/*DropDown*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  rgb(24, 27, 27);
+  min-width: 70px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .fas,
@@ -199,8 +223,9 @@ ul li a {
 
 .nav_icon {
   margin: 0;
+  padding-top:10px ;
+  padding-bottom: 10px;
 }
-
 
 
 .project-snap {
@@ -214,4 +239,49 @@ ul li a {
   padding: 5px 5px;
   text-decoration: none;
   margin: 5px;
+}
+
+
+/* ToolTips*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  font-size: x-small;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
