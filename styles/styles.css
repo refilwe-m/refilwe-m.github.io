@@ -88,7 +88,7 @@ ul li a {
 
 #container {
   display: grid;
-  grid-template-rows: 2fr 17fr 10fr 2fr;
+  grid-template-rows: 1fr 8fr 6fr 1fr;
   grid-gap: 10px;
 }
 
@@ -221,6 +221,8 @@ ul li a {
   border-bottom: 3px solid #a70972;
 }
 
+
+
 .nav_icon {
   margin: 0;
   padding-top:10px ;
@@ -234,11 +236,12 @@ ul li a {
 
 .tag {
   display: inline;
+  text-align: center;
+  text-decoration: none;
   border-radius: 30px;
   background-color: #222222;
+  color: #fff;
   padding: 5px 5px;
-  text-decoration: none;
-  margin: 5px;
 }
 
 
