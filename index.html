@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Refilwe M Mashile | Website</title>
     <link rel="icon" href="./icons/R_logo.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--My Styles-->
     <link href="styles/styles.css" rel="stylesheet" />
     <link href="styles/owl.carousel.min.css" rel="stylesheet" />
@@ -92,6 +93,9 @@
         <div id="about" class="content">
           <h4>About Me</h4>
           <div class="box">
+            <div>
+              <p>I am a tech enthusiast, who is passionate about everything in the tech world. I aspire to be a generalist. I am fondly in love with the concept of giving back, hence I volunteer different organizations when I have free time.</p>
+            </div>
             <ol>
               <li>Johannesburg, Gauteng</li>
               <li>Computer Science & Informatics Student | UJ</li>
@@ -102,17 +106,17 @@
                   <li>IT Support</li>
                 </ol>
               </li>
-              <li>Passionate Community volunteer</li>
               <li>Academic Achievements</li>
               <li>
                 <select name="certificates">
                   <option>Certificates</option>
-                  <option value="Coursera"><a href="">Coursera</a></option>
+                  <option value="Coursera"><a href="https://www.coursera.org/user/ce1c7244b4d6a2c058a9857c9c838380">Coursera1</a></option>
+                  <option value="Coursera"><a href="https://www.coursera.org/user/1dcbf8a2b13d647201565cb530e34c07">Coursera2</a></option>
                   <option value="FreeCodeCamp">
-                    <a href="">FreeCodeCamp</a>
+                    <a href="https://www.freecodecamp.org/refilwe">FreeCodeCamp</a>
                   </option>
-                  <option value="SoloLearn"><a href="">SoloLearn</a></option>
-                  <option value="Udemy"><a href="">Udemy</a></option>
+                  <option value="SoloLearn"><a href="https://www.sololearn.com/profile/7370892">SoloLearn</a></option>
+                  <option value="Udemy"><a href="https://www.udemy.com/share/101J66BUMZclxSQX4=/">Udemy</a></option>
                 </select>
               </li>
               <li>Hackathons Attended 3</li>
@@ -120,16 +124,16 @@
           </div>
         </div>
         <div id="projects" class="content">
-          <h4>My Builds Gallery</h4>
+          <h4>My Projects</h4>
           <div id = "gallery">
           <div class="project-snap">
-            <img src="./images/projects/Student_Hub.jpg" width = "200px"/>
+            <img src="./images/projects/Student_Hub.jpg" width = "350px"/>
           </div>
           <div class="project-snap">
-            <img src="./images/projects/StuCo_Academy.jpg" width="200px" />
+            <img src="./images/projects/StuCo_Academy.jpg" width="350px" />
           </div>
           <div class="project-snap">
-            <img src="./images/projects/To-Do List.jpg" width="200px" />
+            <img src="./images/projects/To-Do List.jpg" width="350px" />
           </div>
           <div class="project-snap">
             <img src="" width="200px" />
@@ -197,5 +201,16 @@
         All rights reserved | Developed by Refilwe M. Mashile
       </p>
     </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("nav");
+        if (x.className === "nav_link") {
+          x.className += " responsive";
+        } else {
+          x.className = "nav";
+        }
+      }
+      </script>
   </body>
 </html>

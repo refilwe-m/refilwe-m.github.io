@@ -88,20 +88,20 @@ ul li a {
 
 #container {
   display: grid;
-  grid-template-rows: 1fr 8fr 6fr 1fr;
+  grid-template-rows: 1fr 8fr 9fr 1fr;
   grid-gap: 10px;
 }
 
 #gallery{
   display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-template-rows: 120px;
-  grid-gap: 5px;
+  grid-template-columns: 300px;
+  grid-template-rows: 160px 160px 160px;
+  grid-gap: 10px;
 }
 
 #info {
   display: grid;
-  grid-template-columns: 25% 50% 20%;
+  grid-template-columns: 35% 30% 20%;
   grid-gap: 10px;
 }
 
@@ -288,3 +288,10 @@ ul li a {
   visibility: visible;
   opacity: 1;
 }
+
+/*Responsivenes*/
+@media screen and (max-width: 600px) {
+  
+}
+
+
