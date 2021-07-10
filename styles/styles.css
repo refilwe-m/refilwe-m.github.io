@@ -81,7 +81,10 @@ ul li a {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                    I D s 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
+#about{
+  width: 32%;
+  display: inline-block;
+}
 #avatar {
   width: 200px;
   z-index: 1;
@@ -91,9 +94,14 @@ ul li a {
 
 #container {
   display: grid;
-  grid-template-rows: 1fr 8fr 9fr 1fr;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
   grid-gap: 10px;
 }
+
+#content{
+  display: flex;
+}
+
 
 #cover{
   position: absolute;
@@ -104,18 +112,19 @@ ul li a {
   top:20;
 }
 
-#gallery{
-  display: grid;
-  grid-template-columns: 300px;
-  grid-template-rows: 160px 160px 160px;
-  grid-gap: 10px;
+/* Light Theme*/
+#light-mode{
+  background-color: #fff;
+  color: black;
+}
+
+/*#gallery{
+  
 }
 
 #info {
-  display: grid;
-  grid-template-columns: 35% 30% 20%;
-  grid-gap: 10px;
-}
+  
+}*/
 
 
 

@@ -46,8 +46,8 @@
               </div>
             </a>
           </li>
-          <li class="nav-item">
-            <a href="#">
+          <li class="nav-item" onclick="changeMode()">
+            <a href="">
               <div class="nav_icon">
                 <i class="far fa-moon fa-3x tooltip"
                   ><span class="tooltiptext">Change Mode</span></i
@@ -101,110 +101,7 @@
           </ul>
         </div>
       </div>
-      <div id="info">
-        <div id="about" class="content">
-          <h4>About Me</h4>
-          <div class="box">
-            <div>
-              <p>
-                I am a tech enthusiast, who is passionate about everything in
-                the tech world. I aspire to be a generalist. I am fondly in love
-                with the concept of giving back, hence I volunteer different
-                organizations when I have free time.
-              </p>
-            </div>
-            <ol>
-              <i class="fas fa-street-view"></i
-              >Johannesburg, Gauteng<br>
-              <i class="fas fa-graduation-cap"></i
-              >Computer Science & Informatics Student | UJ<br>
-              <i class="fas fa-graduation-cap"></i
-              >Process Instrumentation & Control | VUT<br>
-              <i class="fas fa-briefcase"></i
-              ><em>Side Hustles:</em>
-              <button class="tag">Graphic Design</button>
-              <button class="tag">IT Support</button><br>
-
-              <button class = "tag dropdown">Academic Achievements
-                <div class="dropdown-content">
-                  <a href="https://drive.google.com/file/d/1EZNm7guz34ZUvoDhU7vq4b9VKmWru_f8/view?usp=sharing" target="_blank">Top 10 Achiever</a>
-                </div>
-              </button><br>
-              <button class="dropdown tag">
-                Certificates
-                <div class="dropdown-content">
-                  <a
-                    href="https://www.coursera.org/user/ce1c7244b4d6a2c058a9857c9c838380"
-                    target="_blank"
-                    >Coursera1</a
-                  >
-                  <a
-                    href="https://www.coursera.org/user/1dcbf8a2b13d647201565cb530e34c07"
-                    target="_blank"
-                    >Coursera2</a
-                  >
-                  <a href="https://www.freecodecamp.org/refilwe" target="_blank"
-                    >FreeCodeCamp</a
-                  >
-                  <a
-                    href="https://www.sololearn.com/profile/7370892"
-                    target="_blank"
-                    >SoloLearn</a
-                  >
-                  <a
-                    href="http://ude.my/UC-6fc395e0-a54b-4bda-92d6-3483aefe9672"
-                    target="_blank"
-                    >Udemy</a
-                  >
-                </div>
-              </button><br>
-              <i class="fas fa-code"></i>Hackathons Attended 3
-          </div>
-        </div>
-        <div id="projects" class="content">
-          <h4>My Projects</h4>
-          <div id="gallery">
-            <div class="project-snap">
-              <img src="./images/projects/Student_Hub.jpg" width="350px" />
-            </div>
-            <div class="project-snap">
-              <img src="./images/projects/StuCo_Academy.jpg" width="350px" />
-            </div>
-            <div class="project-snap">
-              <img src="./images/projects/To-Do List.jpg" width="350px" />
-            </div>
-            <div class="project-snap">
-              <img src="" width="200px" />
-            </div>
-            <div class="project-snap">
-              <img src="" width="200px" />
-            </div>
-          </div>
-        </div>
-
-        <div id="skills" class="content">
-          <h4>Skills</h4>
-          <div class="box">
-            <button class="tag">💻Git & github</button>
-            <button class="tag">👩🏾‍🎨 Web Design</button>
-            <button class="tag">👩🏾‍💻 Technical Support</button>
-            <button class="tag">👩🏾‍🎨 Graphic Design</button>
-            <button class="tag">👩🏾‍💻 OS</button>
-            <button class="tag">👩🏾‍🎨 Web Design</button>
-
-            <h4>Languages</h4>
-            <button class="tag">👩🏾‍💻 Python</button>
-            <button class="tag">👩🏾‍💻 Javascript</button>
-            <button class="tag">👩🏾‍💻 JQuery</button>
-            <button class="tag">👩🏾‍💻 HTML</button>
-            <button class="tag">👩🏾‍💻 CSS</button>
-            <button class="tag">👩🏾‍💻 C++</button>
-            <button class="tag">👩🏾‍💻 Java</button>
-            <button class="tag">👩🏾‍💻 React + Redux</button>
-          </div>
-        </div>
-      </div>
-    </div>
+      
 
     <footer>
       <a href="https://www.facebook.com/refilwe.mirriam.33" target="_blank"
@@ -230,7 +127,12 @@
       >
         <img class="icon" src="icons/youtube-icon.png"
       /></a>
-      <input id="input" type="text" autocomplete="off" placeholder="Email Me" />
+      <a
+      href="https://www.youtube.com/channel/UCTXeRSHQzc7JuIWyRg38QoA?view_as=subscriber"
+      target="_blank"
+    >
+      <img class="icon" src=""
+    /></a>
       <p class="text-white text-center mt-5">
         Copyright &copy;
         <script>
@@ -240,15 +142,6 @@
       </p>
     </footer>
 
-    <script>
-      function myFunction() {
-        var x = document.getElementById("nav");
-        if (x.className === "nav_link") {
-          x.className += " responsive";
-        } else {
-          x.className = "nav";
-        }
-      }
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
