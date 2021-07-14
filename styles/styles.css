@@ -19,30 +19,37 @@ body {
 
 h1 {
   font-family: Tahoma;
-  overflow: hidden; 
-  border-right: .15em solid orange; 
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .15em; 
-  animation: 
-    typing 4.5s steps(70),
-    blink-caret .75s infinite;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 4.5s steps(70), blink-caret 0.75s infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 38% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 38%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 h4 {
-  text-align: center;
+  margin:0;
 }
 
 footer {
@@ -51,6 +58,7 @@ footer {
   padding-bottom: 20px;
   background-color: rgb(24, 27, 27);
 }
+
 
 /*Style Select*/
 
@@ -81,9 +89,9 @@ ul li a {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                    I D s 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-#about{
-  width: 32%;
-  display: inline-block;
+#about {
+  margin-left: 15%;
+  width: 30%;
 }
 #avatar {
   width: 200px;
@@ -98,42 +106,31 @@ ul li a {
   grid-gap: 10px;
 }
 
-#content{
-  display: flex;
+#content {
+  display: inline-flex;
 }
 
-
-#cover{
+#cover {
   position: absolute;
   width: 100%;
   object-fit: cover;
   z-index: -2;
-  right:0;
-  top:20;
+  right: 0;
+  top: 20;
 }
 
 /* Light Theme*/
-#light-mode{
+#light-mode {
   background-color: #fff;
   color: black;
 }
 
-/*#gallery{
-  
-}
-
-#info {
-  
-}*/
-
-
-
-#info-links{
+#info-links {
   float: none;
   display: inline;
 }
 
-#info-nav{
+#info-nav {
   text-align: center;
 }
 
@@ -163,8 +160,8 @@ ul li a {
   z-index: -1;
 }
 
-#my-name{
-  color: 	#FFC0CB;
+#my-name {
+  color: #ffc0cb;
 }
 
 #nav {
@@ -172,8 +169,16 @@ ul li a {
   background-color: rgb(24, 27, 27);
 }
 
-#profile-pic{
-  width:35px;
+#profile-pic {
+  width: 35px;
+}
+
+#projects{
+  width:40%;
+  margin-right:15%;
+}
+#project-info{
+  display: inline;
 }
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -182,8 +187,9 @@ ul li a {
 .box {
   background: rgb(24, 27, 27);
   border-radius: 5px;
-  box-shadow: 5px 5px 15px -5px rgba(58, 50, 50, 0.3);
+  box-shadow: 5px 5px 15px -5px rgba(82, 76, 76, 0.3);
   padding: 20px;
+  display: inline;
 }
 
 .button {
@@ -195,10 +201,20 @@ ul li a {
   background: rgb(61, 223, 12);
 }
 
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
 
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
 
 .content {
-  
   margin-bottom: 1px;
   margin-right: 1px;
 }
@@ -216,9 +232,9 @@ ul li a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color:  rgb(24, 27, 27);
+  background-color: rgb(24, 27, 27);
   min-width: 70px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
 }
@@ -229,15 +245,28 @@ ul li a {
 
 .fas,
 .far {
-  color: #FFC0CB
+  color: #ffc0cb;
+}
+.heading-date{
+  font-size:9px;
+  margin:0;
+  color: grey;
 }
 
+.heading-info{
+  display:flex;
+  
+}
+.heading-text{
+  padding-left: 20px;
+  padding-top: 10px;
+}
 .icon {
   width: 50px;
 }
 
-.info-item:hover{
-  background: rgb(24, 27, 27); 
+.info-item:hover {
+  background: rgb(24, 27, 27);
   padding: 15px;
 }
 
@@ -247,17 +276,20 @@ ul li a {
   border-bottom: 3px solid #a70972;
 }
 
-
-
 .nav_icon {
   margin: 0;
-  padding-top:10px ;
+  padding-top: 10px;
   padding-bottom: 10px;
 }
 
+.project-snippet {
+  width:100px;
+}
 
-.project-snap {
-  text-align: center;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
 .tag {
@@ -269,7 +301,6 @@ ul li a {
   color: #fff;
   padding: 5px 5px;
 }
-
 
 /* ToolTips*/
 .tooltip {
@@ -293,11 +324,9 @@ ul li a {
   left: 50%;
   margin-left: -60px;
 
-
   opacity: 0;
   transition: opacity 0.3s;
 }
-
 
 .tooltip .tooltiptext::after {
   content: "";
@@ -316,5 +345,26 @@ ul li a {
 }
 
 /*Responsiveness*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
 
 
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
