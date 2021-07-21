@@ -49,7 +49,7 @@ h1 {
 }
 
 h4 {
-  margin:0;
+  margin: 0;
 }
 
 footer {
@@ -59,8 +59,11 @@ footer {
   background-color: rgb(24, 27, 27);
 }
 
+section {
+  padding: 10px 0;
+  display: inline-block;
+}
 
-/*Style Select*/
 
 ul {
   display: flex;
@@ -89,10 +92,6 @@ ul li a {
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                    I D s 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-#about {
-  margin-left: 15%;
-  width: 30%;
-}
 #avatar {
   width: 200px;
   z-index: 1;
@@ -102,12 +101,8 @@ ul li a {
 
 #container {
   display: grid;
-  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-rows: 0.1fr 1fr  1 fr 1fr 0.1fr;
   grid-gap: 10px;
-}
-
-#content {
-  display: inline-flex;
 }
 
 #cover {
@@ -170,16 +165,10 @@ ul li a {
 }
 
 #profile-pic {
-  width: 35px;
+  width: 25px;
 }
 
-#projects{
-  width:40%;
-  margin-right:15%;
-}
-#project-info{
-  display: inline;
-}
+
 
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
              C L A S S E S
@@ -187,9 +176,9 @@ ul li a {
 .box {
   background: rgb(24, 27, 27);
   border-radius: 5px;
-  box-shadow: 5px 5px 15px -5px rgba(82, 76, 76, 0.3);
-  padding: 20px;
-  display: inline;
+  padding: 15px 100px;
+  width:100%;
+  
 }
 
 .button {
@@ -214,11 +203,6 @@ ul li a {
   width: 100%;
 }
 
-.content {
-  margin-bottom: 1px;
-  margin-right: 1px;
-}
-
 .description {
   display: flex;
 }
@@ -237,6 +221,11 @@ ul li a {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
+ rgb(180, 178, 178)
+}
+
+.dropdown-content > a{
+  color: #ffc0cb;
 }
 
 .dropdown:hover .dropdown-content {
@@ -247,20 +236,25 @@ ul li a {
 .far {
   color: #ffc0cb;
 }
-.heading-date{
-  font-size:9px;
-  margin:0;
+
+.heading-date {
+  font-size: 9px;
+  margin: 0;
   color: grey;
 }
 
-.heading-info{
-  display:flex;
-  
+.heading-info {
+  display: flex;
 }
-.heading-text{
+.heading-text {
   padding-left: 20px;
   padding-top: 10px;
 }
+
+.hide{
+  display: none;
+}
+
 .icon {
   width: 50px;
 }
@@ -282,8 +276,9 @@ ul li a {
   padding-bottom: 10px;
 }
 
-.project-snippet {
-  width:100px;
+.project-snippet:hover + .hide {
+  width: 100px;
+  display: block;
 }
 
 .row {
@@ -351,8 +346,6 @@ ul li a {
   padding: 0 4px;
 }
 
-
-
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
   .column {
@@ -366,5 +359,16 @@ ul li a {
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box {
+    width: 100%;
+    text-align: left;
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
