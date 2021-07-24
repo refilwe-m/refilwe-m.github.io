@@ -9,11 +9,11 @@ Styles are sorted alphabetically under these categories
                    T  A G S 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 body {
-  background-color: rgb(187, 215, 228);
-  color: rgb(0, 0, 0);
+  background-color: rgb(2, 41, 41);
+  color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
-  font-family: Poppins, sans-serif;
+  font-family:   'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 12px;
 }
 
@@ -56,7 +56,7 @@ footer {
   padding-top: 10px;
   text-align: center;
   padding-bottom: 20px;
-  background-color: rgb(214, 228, 228);
+  background-color: rgb(3, 26, 26);
 }
 
 section {
@@ -99,6 +99,9 @@ ul li a {
   padding-top: 300px;
 }
 
+#about{
+  background:rgb(3, 26, 26)
+}
 #container {
   display: grid;
   grid-template-rows: 0.1fr 1fr  1 fr 1fr 0.1fr;
@@ -151,17 +154,17 @@ ul li a {
 #main {
   text-align: center;
   margin: 0;
-  background-color: rgb(184, 211, 211);
+  background-color: rgb(3, 26, 26);
   z-index: -1;
 }
 
 #my-name {
-  color:  #f0627a;;
+  color:  #f0627a;
 }
 
 #nav {
   display: inline;
-  background-color: rgb(224, 235, 235);
+  background-color: rgb(3, 26, 26);
 }
 
 #profile-pic {
@@ -180,7 +183,7 @@ ul li a {
   display: inline-block;
 }
 .box {
-  background: rgb(220, 238, 238);
+  
   border-radius: 5px;
   padding: 15px 100px;
   width:100%;
@@ -222,7 +225,7 @@ ul li a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: rgb(211, 236, 236);
+  background-color: rgb(3, 26, 26);
   min-width: 70px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
@@ -245,7 +248,7 @@ ul li a {
 .heading-date {
   font-size: 9px;
   margin: 0;
-  color: grey;
+  color: rgb(100, 179, 179);
 }
 
 .heading-info {
@@ -293,12 +296,14 @@ ul li a {
 }
 
 .tag {
-  display: inline;
+  display: inline-block;
   text-align: center;
+  margin-bottom: 2px;
   text-decoration: none;
   border-radius: 30px;
-  background-color: #222222;
-  color: #fff;
+  border-style: solid;
+  border-width: thin;
+  color:  #f0627a;
   padding: 5px 5px;
 }
 
