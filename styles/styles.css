@@ -353,8 +353,10 @@ ul li a {
   background-color: transparent;
   width: 300px;
   height: 200px;
-  border: 1px solid #f1f1f1;
+  border: 1px solid #f0627a;;
   perspective: 1000px;
+  width:30;
+  display: inline-block;
 }
 
 .flip-box-inner {
@@ -379,13 +381,12 @@ ul li a {
 }
 
 .flip-box-front {
-  background-image: url(../images/projects/Traffic_Light.jpg);
   background-size: 300px 200px;
   color: black;
 }
 
 .flip-box-back {
-  background-color: dodgerblue;
+  background-color:  rgb(3, 26, 26);
   color: white;
   transform: rotateY(180deg);
 }
