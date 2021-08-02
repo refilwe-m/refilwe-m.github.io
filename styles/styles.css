@@ -285,9 +285,6 @@ footer li a:hover {
     display: block;
     margin: 5px 0;
   }
-}
-
-@media screen and (max-width: 270px) {
   h1 {
     font-size: 12px;
   }
@@ -302,3 +299,5 @@ footer li a:hover {
     padding-top: 120px;
   }
 }
+
+
