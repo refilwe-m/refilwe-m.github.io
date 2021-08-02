@@ -1,413 +1,183 @@
-/*
-Styles are sorted alphabetically under these categories
-1. TAGS
-2. IDS
-3. CLASSES
-*/
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                   T  A G S 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
 
 body {
-  background-color: rgb(2, 41, 41);
-  color: rgb(255, 255, 255);
-  font-family:   'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 12px;
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
+    line-height: 1.45;
 }
-
+#landing {
+    color: #FFFFFF;
+    background-color: #284b63;
+    padding: 80px 0;
+    text-align: center;
+}
 h1 {
-  font-family: Tahoma;
-  overflow: hidden;
-  border-right: 0.15em solid orange;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 4.5s steps(70), blink-caret 0.75s infinite;}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 38%;
-  }
+  font-size: 48px;
+  margin: 0 0 16px 0;
 }
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
+h2 {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0 0 16px 0;
 }
-
-h4 {
-  margin: 0;
-}
-
-footer {
-  padding-top: 10px;
-  text-align: center;
-  padding-bottom: 20px;
-  background-color: rgb(3, 26, 26);
-}
-
-section {
-  padding: 10px 0;
-  display: inline-block;
-}
-
-
-ul {
-  display: flex;
-  float: right;
-  margin: 0;
-  height: 30px;
-}
-
-ul li {
-  display: inline;
-  padding-right: 20px;
-  list-style: none;
-  text-align: center;
-}
-
-:last-child ul {
-  margin-right: 50px;
-}
-
-ul li a {
-  text-decoration: none;
-  padding: 0 50x;
-  display: block;
-}
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                   I D s 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #avatar {
-  width: 200px;
-  z-index: 1;
-  margin-top: -75px;
-  padding-top: 300px;
-}
+    width: 200px;
+    z-index: 1;
+    margin-top: -75px;
+    padding-top: 300px;
+  }
 
-#about, #projects{
-  background:rgb(3, 26, 26)
+.container {
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    max-width: 900px;
 }
-#container {
-  display: grid;
-  grid-template-rows: 0.1fr 1fr  1fr 1fr 0.1fr;
-  grid-gap: 10px;
+.btn {
+    display: inline-block;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    background: #549DA0;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #468486;
 }
 
 #cover {
-  position: absolute;
-  width: 100%;
-  object-fit: cover;
-  z-index: -2;
-  right: 0;
-  top: 20;
-}
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    z-index: 0;
+    right: 0;
+    top: 20;
+  }
 
-/* Light Theme*/
-#light-mode {
-  background-color: #fff;
-  color: black;
+section {
+    text-align: center;
+    padding: 40px 0;
+}
+.features {
+    background: #FFFFFF;
+    color: #000000;
+}
+.feature {
+    width: 32%;
+    display: inline-block;
+    font-size:16px;
+}
+.feature img {
+    width: 40%;
 }
 
 #info-links {
-  float: none;
-  display: inline;
-}
-
-#info-nav {
-  text-align: center;
-}
-
-#input {
-  width: 20%;
-  color: rgb(0, 0, 0);
-  outline: none;
-  box-shadow: inset 0 -3px 0 0 rgb(211, 223, 223);
-  border: none;
-  padding: 15px 5px;
-  border-radius: 25px;
-  background: rgba(218, 204, 204, 0.1);
-}
-
-#logo {
-  float: left;
-  margin: 0;
-  margin-left: 50px;
-  display: flex;
-  width: 60px;
-}
-
-#main {
-  text-align: center;
-  margin: 0;
-  background-color: rgb(3, 26, 26);
-  z-index: -1;
-}
+    float: none;
+    display: inline;
+  }
+  
+  #info-nav {
+    text-align: center;
+  }
 
 #my-name {
-  color:  #f0627a;
-}
-
-#nav {
-  display: inline;
-  background-color: rgb(3, 26, 26);
-}
-
-#profile-pic {
-  width: 25px;
-}
-
-#svg-icon{
-  width: 60%;
-}
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-             C L A S S E S
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-.about-div{
-  width:49%;
-  display: inline-block;
-}
-.box {
-  
-  border-radius: 5px;
-  padding: 15px 100px;
-  width:100%;
-  
-}
-
-.button {
-  color: #fff;
-  display: inline;
-  border: none;
-  padding: 5px 5px;
-  border-radius: 25px;
-  background: rgb(61, 223, 12);
-}
-
-
-.description {
-  display: flex;
-}
-
-/*DropDown*/
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgb(3, 26, 26);
-  min-width: 70px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.dropdown-content a{
-  color: #f0627a;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.fas,
-.far {
-  color:  #f0627a;;
-}
-
-.heading-date {
-  font-size: 9px;
-  margin: 0;
-  color: rgb(100, 179, 179);
-}
-
-.heading-info {
-  display: block;
-}
-.heading-text {
-  padding-left: 20px;
-  padding-top: 10px;
-}
-
-.hide{
-  display: none;
-}
-
-.icon {
-  width: 50px;
-}
-
-.info-item:hover {
-  background: rgb(191, 214, 214);
-  padding: 15px;
-}
-
-.item {
-  display: block;
-  align-items: center;
-  border-bottom: 3px solid #a70972;
-}
-
-.nav_icon {
-  margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-.tag {
-  display: inline-block;
-  text-align: center;
-  margin-bottom: 2px;
-  text-decoration: none;
-  border-radius: 30px;
-  border-style: solid;
-  border-width: thin;
-  color:  #f0627a;
-  padding: 5px 5px;
-}
-
-/* ToolTips*/
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #555;
-  color: #fff;
-  font-size: x-small;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-
-  position: absolute;
-  z-index: 1;
-  top: 125%;
-  left: 50%;
-  margin-left: -60px;
-
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-
-
-/* P R O J E C T S */
-.flip-box {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f0627a;;
-  perspective: 1000px;
-  width:30;
-  display: inline-block;
-}
-
-.flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-box-front {
-  background-size: 300px 200px;
-  color: black;
-}
-
-.flip-box-back {
-  background-color:  rgb(3, 26, 26);
-  color: white;
-  transform: rotateY(180deg);
-}
-
-
-
-
-/*R E S P O N S I V E N E S S*/
-@media screen and (max-width: 620px) {
-
-
-}
-
-
-
-@media screen and (max-width: 480px) {
-  .box {
-    width: 100%;
-    text-align: left;
-    margin: 0 0 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color:  #f0627a;
   }
+
+.quote {
+    background:#549DA0;
+    color:#FFFFFF;
 }
 
 
-@media screen and (max-width: 320px) {
-.heading-info{
-  display: block;
+blockquote {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
-
+blockquote p {
+    margin: 0 0 5px 0;
+    font-size: 24px;
 }
+blockquote cite {
+    font-size: 16px;
+    font-style: italic;
+}  
+blockquote cite:before {
+    content: '–';
+    margin-right: 5px;
+}
+footer {
+    background: #353535;
+    padding: 32px 0;
+    text-align: center;
+    color: #868686;
+    font-size: 12px;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+footer li {
+    display: inline-block;
+}
+footer li a {
+    padding: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #c3c3c3;
+}
+footer li a:hover {
+    color: white;
+}
+@media screen and (max-width: 480px) {
+    .btn {
+        display: block;
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 32px;
+        margin: 0 0 8px 0;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    section {
+        padding: 25px 0 15px 0;
+    } 
+    .feature {
+        width: 100%;
+        text-align: left;
+        margin: 0 0 10px 0;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .feature img {
+        width:15%;
+        min-width:60px;
+        margin-right:20px;
+    }
+    .quote {
+        padding: 30px 0;
+    }
+    blockquote p {
+        font-size: 18px;
+    }
+    blockquote cite {
+        font-size: 14px;
+    }
+    footer {
+        padding: 30px 0 10px 0;
+    }
+    footer li {
+        display: block;
+        margin: 5px 0;
+    }
 
+}  

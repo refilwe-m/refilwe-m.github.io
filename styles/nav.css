@@ -1,0 +1,122 @@
+/*DropDown*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(3, 26, 26);
+  min-width: 70px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: #f0627a;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.fas,
+.far {
+  color: #f0627a;
+}
+
+header{
+  margin: 0;
+}
+
+
+#logo {
+  float: left;
+  margin: 0;
+  margin-left: 50px;
+  display: flex;
+  width: 60px;
+}
+
+#nav {
+  display: inline;
+  background-color: rgb(3, 26, 26);
+}
+
+.nav_icon {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#profile-pic {
+  width: 25px;
+}
+
+/* ToolTips*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  font-size: x-small;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+ul {
+  display: flex;
+  float: right;
+  margin: 0;
+  height: 30px;
+}
+
+ul li {
+  display: inline;
+  padding-right: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+:last-child ul {
+  margin-right: 50px;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 0 50x;
+  display: block;
+}
