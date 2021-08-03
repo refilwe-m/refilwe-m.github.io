@@ -1,13 +1,15 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
 .theme-light {
-    --color-primary: #d7d7e0;;
+    --color-primary: #d7d7e0;
     --color-secondary: #fbfbfe;
+    --color-tertiary:#E4E6EB;
     --color-accent: #bb026e;
     --font-color: #000000;
  }
  .theme-dark {
     --color-primary: #101a24;
     --color-secondary: #192734;
+    --color-tertiary:#22303c;
     --color-accent:  #f0627a;
     --font-color: #ffffff;
  }
@@ -97,7 +99,7 @@ h2 {
 }
 
 .features {
-  background: var(--color-secondary);
+  background: var(--color-tertiary);
   color: var(--font-color);
 }
 .feature {
