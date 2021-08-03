@@ -102,7 +102,7 @@ h2 {
   background-color: transparent;
   width: 300px;
   height: 200px;
-  border: 1px solid #f0627a;
+  /*border: 1px solid #f0627a;*/
   perspective: 1000px;
   width: 30;
   display: inline-block;
