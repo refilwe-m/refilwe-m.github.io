@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <!-- <header>
+  <header>
       <div id="nav">
         <a href="index.html"><img id="logo" src="images/logo.png" alt="Refilwe's logo" /></a>
         <ul class="nav-links">
@@ -37,7 +37,7 @@
               </div>
             </a>
           </li>
-          <li class="nav-item" onclick="changeMode()">
+          <li class="nav-item" onclick="toggleTheme()">
             <a href="">
               <div class="nav_icon">
                 <i class="far fa-moon fa-2x tooltip"><span class="tooltiptext">Change Mode</span></i>
@@ -61,7 +61,7 @@
           </li>
         </ul>
       </div>
-      </header> -->
+      </header>
 
   <section id="landing">
     <div class="container">
@@ -89,7 +89,7 @@
     </div>
   </section>
 
-  <section class="quote">
+  <section id = "about" class="quote">
     <div class="about-div">
       <!-- <div class="heading-info">
         <img src="images/avatar.png" id="project-icon" class="icon" alt="" />
@@ -164,7 +164,7 @@
     </blockquote>
   </section>
 
-  <section class="features">
+  <section id = "projects" class="features">
     <div class="flip-box feature">
       <div class="flip-box-inner">
         <div style="background-image: url(../images/projects/Traffic_Light.jpg); background-repeat:no-repeat; background-size: cover;" class="flip-box-front">
@@ -173,7 +173,7 @@
         </div>
         <div class="flip-box-back">
           <h4 style="color:  #f0627a;">Traffic Light</h4>
-          <p>Learnings: DOM MANIPULATIONS</p>
+          <p>Learnings: DOM Manipulation</p>
           <h4 class = "btn">Click to View</h4>
         </div></a>
       </div>
@@ -186,7 +186,7 @@
         </div>
         <div class="flip-box-back">
           <h4 style="color:  #f0627a;">To-Do List</h4>
-          <p>Learnings: ESJ, EXPRESS, NODEJS, SERVERS</p>
+          <p>Learnings: ESJ, ExpressJS, NodeJS</p>
           <h4 class = "btn">Click for Source Code</h4>
         </div></a>
       </div>
@@ -199,7 +199,7 @@
         </div>
         <div class="flip-box-back">
           <h4 style="color:  #f0627a;">StuCo Academy</h4>
-          <p>Learnings:Collaborated Project for a hackathon</p>
+          <p>Learnings:Hackathon project</p>
           <h4 class = "btn">Click to View</h4>
         </div></a>
       </div>
@@ -235,6 +235,30 @@
       </p>
     </div>
   </footer>
+
+  <script>
+    // function to set a given theme/color-scheme
+function setTheme(themeName) {
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName;
+}
+// function to toggle between light and dark theme
+function toggleTheme() {
+   if (localStorage.getItem('theme') === 'theme-dark'){
+       setTheme('theme-light');
+   } else {
+       setTheme('theme-dark');
+   }
+}
+// Immediately invoked function to set the theme on initial load
+(function () {
+   if (localStorage.getItem('theme') === 'theme-dark') {
+       setTheme('theme-dark');
+   } else {
+       setTheme('theme-light');
+   }
+})();
+  </script>
 </body>
 
 </html>
