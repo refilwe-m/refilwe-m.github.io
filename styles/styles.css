@@ -44,6 +44,10 @@
   padding-top: 300px;
 }
 
+.about-div {
+  text-align: justify;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -73,11 +77,18 @@ h5 {
 }
 
 #box {
-  width: 80%;
+  width: 70%;
   display: inline-block;
-  padding: 0 10%;
+  padding: 0 15%;
 }
 
+.cicon {
+  width: 30px;
+}
+
+.cicon:hover {
+  width: 50px;
+}
 .container {
   margin: 0 auto;
   padding: 0 20px 0 20px;
@@ -101,7 +112,7 @@ h5 {
 
 #cover {
   width: 100%;
-  object-fit:fill;
+  object-fit: fill;
 }
 
 /*DropDown*/
@@ -197,8 +208,7 @@ h5 {
 }
 
 .heading-text {
-  padding-left: 20px;
-  padding-top: 10px;
+  padding: 0px 15px;
   display: inline-block;
 }
 
@@ -232,6 +242,10 @@ h5 {
 section {
   text-align: center;
   padding: 40px 0;
+}
+
+#svg-icon {
+  width: 20px;
 }
 
 .tag {
@@ -300,7 +314,7 @@ footer li a {
   color: #c3c3c3;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px)  and (max-width: 480px) {
   #avatar {
     width: 130px;
     z-index: 1;
@@ -314,6 +328,7 @@ footer li a {
   }
   h1 {
     margin: 0 0 8px 0;
+    font-size: 20px;
   }
   h2 {
     font-size: 18px;
@@ -328,8 +343,6 @@ footer li a {
     margin: 0 0 10px 0;
     font-size: 16px;
     display: flex;
-    align-items: center;
-    justify-content: center;
   }
   .feature img {
     width: 15%;
@@ -385,7 +398,7 @@ header {
 #profile-pic {
   width: 25px;
 }
-#title{
+#title {
   font-size: medium;
 }
 /* ToolTips*/
@@ -454,8 +467,43 @@ ul li a {
   display: block;
 }
 
-@media screen and (min-width: 270px) and (max-width: 320px){
-  body{
+@media screen and (min-width: 470px){
+
+  #logo {
+    float: left;
+    margin: 0;
+    margin-left: 20px;
+    display: flex;
+    width: 40px;
+  }
+  #profile-pic {
+    width: 15px;
+  }
+  .navIco {
+    font-size: 1em;
+  }
+  #nav {
+    display: flex;
+  }
+  .fa-bars {
+    font-size: 1em;
+  }
+  :last-child ul {
+    margin-right: 20px;
+  }
+  #title {
+    font-size: x-small;
+  }
+  ul {
+    padding-inline-start: 70px;
+  }
+  ul li {
+    padding-right: 4px;
+  }
+}
+
+@media screen and (max-width: 270px){
+  body {
     font-size: 12px;
   }
   h1 {
@@ -484,7 +532,7 @@ ul li a {
   :last-child ul {
     margin-right: 20px;
   }
-  #title{
+  #title {
     font-size: x-small;
   }
   ul {
@@ -493,20 +541,72 @@ ul li a {
   ul li {
     padding-right: 4px;
   }
-  #landing{
+  #landing {
     padding: 6px 0;
+  }
+
+  .flip-box {
+    padding: 0 5%;
   }
 }
 
-@media screen and (min-width: 720px) {
-  #avatar {
-    width: 170px;
-    z-index: 1;
-    margin-top: -75px;
-    padding-top: 190px;
+@media screen and (min-width: 271px) and (max-width:300px){
+  body {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 6px;
   }
 
+  #logo {
+    float: left;
+    margin: 0;
+    margin-left: 20px;
+    display: flex;
+    width: 40px;
+  }
+  #profile-pic {
+    width: 15px;
+  }
+  .navIco {
+    font-size: 1em;
+  }
+  #nav {
+    display: flex;
+  }
+  .fa-bars {
+    font-size: 1em;
+  }
+  :last-child ul {
+    margin-right: 20px;
+  }
+  #title {
+    font-size: x-small;
+  }
+  ul {
+    padding-inline-start: 70px;
+  }
+  ul li {
+    padding-right: 4px;
+  }
+  #landing {
+    padding: 6px 0;
+  }
+
+  .flip-box {
+    padding: 0 5%;
+  }
+}
+
+@media screen and (min-width: 270px)  and (max-width: 479px) {
   h1 {
-    font-size: 30px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 480px)  and (max-width: 920px)  {
+ 
+  h1 {
+    font-size: 28px;
   }
 }
