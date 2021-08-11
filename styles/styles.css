@@ -1,37 +1,18 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
 .theme-light {
-    --color-primary: #d7d7e0;
-    --color-secondary: #fbfbfe;
-    --color-tertiary:#E4E6EB;
-    --color-accent: #bb026e;
-    --font-color: #000000;
- }
- .theme-dark {
-    --color-primary: #101a24;
-    --color-secondary: #192734;
-    --color-tertiary:#22303c;
-    --color-accent:  #f0627a;
-    --font-color: #ffffff;
- }
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
-  line-height: 1.45;
+  --color-primary: #d7d7e0;
+  --color-secondary: #fbfbfe;
+  --color-tertiary: #e4e6eb;
+  --color-accent: #bb026e;
+  --font-color: #000000;
 }
-
-
-h1 {
-  font-size: 48px;
-  overflow: hidden;
-  border-right: 0.15em solid orange;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 4.5s steps(70), blink-caret 0.75s infinite;
+.theme-dark {
+  --color-primary: #101a24;
+  --color-secondary: #192734;
+  --color-tertiary: #22303c;
+  --color-accent: #f0627a;
+  --font-color: #ffffff;
 }
-
 /* The typing effect */
 @keyframes typing {
   from {
@@ -52,20 +33,49 @@ h1 {
     border-color: orange;
   }
 }
-h2 {
-  font-weight: 300;
-  font-size: 24px;
-  margin: 0 0 16px 0;
-}
 
-.about-item{
-    display: flex;
+.about-item {
+  display: flex;
 }
 #avatar {
   width: 210px;
   z-index: 1;
   margin-top: -75px;
   padding-top: 300px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.45;
+}
+
+h1 {
+  font-size: 48px;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 4.5s steps(70), blink-caret 0.75s infinite;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 24px;
+  margin: 0 0 16px 0;
+}
+
+h4,
+h5 {
+  margin-bottom: 0;
+}
+
+#box {
+  width: 80%;
+  display: inline-block;
+  padding: 0 10%;
 }
 
 .container {
@@ -75,7 +85,7 @@ h2 {
 }
 .btn {
   display: inline-block;
-  color:var(--font-color);
+  color: var(--font-color);
   font-weight: 500;
   font-size: 20px;
   background: var(--color-accent);
@@ -90,12 +100,32 @@ h2 {
 }
 
 #cover {
-  position: absolute;
   width: 100%;
-  object-fit: cover;
-  z-index: 0;
-  right: 0;
-  top: 20;
+  object-fit:fill;
+}
+
+/*DropDown*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(3, 26, 26);
+  min-width: 70px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #f0627a;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .features {
@@ -151,8 +181,25 @@ h2 {
 
 .flip-box-back {
   background-color: var(--color-primary);
-  color: var(--font-color);;
+  color: var(--font-color);
   transform: rotateY(180deg);
+}
+
+.heading-date {
+  font-size: 9px;
+  margin: 0;
+  color: rgb(100, 179, 179);
+}
+
+.heading-info {
+  padding: 0 10%;
+  display: block;
+}
+
+.heading-text {
+  padding-left: 20px;
+  padding-top: 10px;
+  display: inline-block;
 }
 
 #info-links {
@@ -165,12 +212,23 @@ h2 {
 }
 
 #landing {
-    color: var(--font-color);;
-    background-color:var(--color-primary);
-    padding: 80px 0;
-    text-align: center;
-  }
+  color: var(--font-color);
+  background-color: var(--color-primary);
+  padding: 80px 0;
+  text-align: center;
+}
 
+#logo {
+  float: left;
+  margin: 0;
+  margin-left: 50px;
+  display: flex;
+  width: 60px;
+}
+
+#project-icon {
+  display: inline-block;
+}
 section {
   text-align: center;
   padding: 40px 0;
@@ -186,6 +244,7 @@ section {
   border-width: thin;
   color: #f0627a;
   padding: 5px 5px;
+  font-size: 12px;
 }
 
 #my-name {
@@ -220,10 +279,10 @@ blockquote cite:before {
   margin-right: 5px;
 }
 footer {
-  background:var(--color-primary);
+  background: var(--color-primary);
   padding: 32px 0;
   text-align: center;
-  color: var(--font-color);;
+  color: var(--font-color);
   font-size: 12px;
 }
 footer ul {
@@ -301,38 +360,153 @@ footer li a {
   h1 {
     font-size: 12px;
   }
-
-  
 }
 
+.fas,
+.far {
+  color: #f0627a;
+}
 
-@media screen and (max-width: 270px) {
-    #avatar {
-        width: 70px;
-        z-index: 1;
-        margin-top: -75px;
-        padding-top: 120px;
-      }
+header {
+  margin: 0;
+}
 
-      h1 {
-        font-size: 12px;
-      }
-    
-    }
+#nav {
+  display: inline;
+  background-color: rgb(3, 26, 26);
+}
 
-    @media screen and (max-width: 720px) {
-        #avatar {
-            width: 170px;
-            z-index: 1;
-            margin-top: -75px;
-            padding-top: 190px;
-          }
-    
-          h1 {
-            font-size: 30px;
-          }
-        
-        }
+.nav_icon {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
+#profile-pic {
+  width: 25px;
+}
+#title{
+  font-size: medium;
+}
+/* ToolTips*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
 
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  font-size: x-small;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
 
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+ul {
+  display: flex;
+  float: right;
+  margin: 0;
+  height: 30px;
+}
+
+ul li {
+  display: inline;
+  padding-right: 20px;
+  list-style: none;
+  text-align: center;
+}
+
+:last-child ul {
+  margin-right: 50px;
+}
+
+ul li a {
+  text-decoration: none;
+  padding: 0 50x;
+  display: block;
+}
+
+@media screen and (min-width: 270px) and (max-width: 320px){
+  body{
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 12px;
+  }
+
+  #logo {
+    float: left;
+    margin: 0;
+    margin-left: 20px;
+    display: flex;
+    width: 40px;
+  }
+  #profile-pic {
+    width: 15px;
+  }
+  .navIco {
+    font-size: 1em;
+  }
+  #nav {
+    display: flex;
+  }
+  .fa-bars {
+    font-size: 1em;
+  }
+  :last-child ul {
+    margin-right: 20px;
+  }
+  #title{
+    font-size: x-small;
+  }
+  ul {
+    padding-inline-start: 70px;
+  }
+  ul li {
+    padding-right: 4px;
+  }
+  #landing{
+    padding: 6px 0;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  #avatar {
+    width: 170px;
+    z-index: 1;
+    margin-top: -75px;
+    padding-top: 190px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
