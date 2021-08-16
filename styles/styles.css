@@ -468,38 +468,7 @@ ul li a {
 }
 
 @media screen and (min-width: 470px){
-
-  #logo {
-    float: left;
-    margin: 0;
-    margin-left: 20px;
-    display: flex;
-    width: 40px;
-  }
-  #profile-pic {
-    width: 15px;
-  }
-  .navIco {
-    font-size: 1em;
-  }
-  #nav {
-    display: flex;
-  }
-  .fa-bars {
-    font-size: 1em;
-  }
-  :last-child ul {
-    margin-right: 20px;
-  }
-  #title {
-    font-size: x-small;
-  }
-  ul {
-    padding-inline-start: 70px;
-  }
-  ul li {
-    padding-right: 4px;
-  }
+  
 }
 
 @media screen and (max-width: 270px){
@@ -509,7 +478,6 @@ ul li a {
   h1 {
     font-size: 12px;
   }
-
   #logo {
     float: left;
     margin: 0;
@@ -544,20 +512,18 @@ ul li a {
   #landing {
     padding: 6px 0;
   }
-
   .flip-box {
     padding: 0 5%;
   }
 }
 
-@media screen and (min-width: 271px) and (max-width:300px){
+@media screen and (min-width: 271px) and (max-width:328px){
   body {
     font-size: 12px;
   }
   h1 {
     font-size: 6px;
   }
-
   #logo {
     float: left;
     margin: 0;
@@ -592,7 +558,6 @@ ul li a {
   #landing {
     padding: 6px 0;
   }
-
   .flip-box {
     padding: 0 5%;
   }
@@ -602,11 +567,26 @@ ul li a {
   h1 {
     font-size: 16px;
   }
+  .navIco {
+    font-size: 1em;
+  }
 }
 
 @media screen and (min-width: 480px)  and (max-width: 920px)  {
- 
   h1 {
     font-size: 28px;
   }
+}
+
+@media screen and (min-width: 472px)  and (max-width: 593px)  {
+  h1 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 321px)  and (max-width: 403px)  {
+  h1 {
+    font-size: 14px;
+  }
+  ul li {padding-right: 5px;}
 }
