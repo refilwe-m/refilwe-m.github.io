@@ -1,8 +1,8 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
 .theme-light {
-  --color-primary: #d7d7e0;
-  --color-secondary: #fbfbfe;
-  --color-tertiary: #e4e6eb;
+  --color-primary: #86c2dd;
+  --color-secondary: #51abd4;
+  --color-tertiary: #86cee4;
   --color-accent: #bb026e;
   --font-color: #000000;
 }
@@ -153,31 +153,28 @@ h5 {
 }
 
 /* P R O J E C T S */
-.flip-box {
+.flip-card {
   background-color: transparent;
   width: 300px;
-  height: 200px;
-  /*border: 1px solid #f0627a;*/
+  height: 250px;
   perspective: 1000px;
-  width: 30;
-  display: inline-block;
 }
 
-.flip-box-inner {
+.flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.8s;
+  transition: transform 0.6s;
   transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.flip-box:hover .flip-box-inner {
+.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.flip-box-front,
-.flip-box-back {
+.flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -185,21 +182,19 @@ h5 {
   backface-visibility: hidden;
 }
 
-.flip-box-front {
-  background-size: 300px 200px;
+.flip-card-front {
+  background-color: transparent;
   color: black;
 }
 
-.flip-box-back {
-  background-color: var(--color-primary);
-  color: var(--font-color);
+.flip-card-back {
   transform: rotateY(180deg);
 }
 
 .heading-date {
   font-size: 9px;
   margin: 0;
-  color: rgb(100, 179, 179);
+  color: rgb(233, 248, 16);
 }
 
 .heading-info {
@@ -512,9 +507,6 @@ ul li a {
   #landing {
     padding: 6px 0;
   }
-  .flip-box {
-    padding: 0 5%;
-  }
 }
 
 @media screen and (min-width: 271px) and (max-width:328px){
@@ -557,9 +549,6 @@ ul li a {
   }
   #landing {
     padding: 6px 0;
-  }
-  .flip-box {
-    padding: 0 5%;
   }
 }
 
