@@ -156,7 +156,7 @@ h5 {
 .flip-card {
   background-color: transparent;
   width: 300px;
-  height: 250px;
+  height: 200px;
   perspective: 1000px;
 }
 
