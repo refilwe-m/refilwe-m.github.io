@@ -1,8 +1,8 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
 .theme-light {
   --color-primary: #86c2dd;
-  --color-secondary: #51abd4;
-  --color-tertiary: #86cee4;
+  --color-secondary: #f3f3f5;
+  --color-tertiary: #e7e7e7;
   --color-accent: #bb026e;
   --font-color: #000000;
 }
@@ -194,7 +194,7 @@ h5 {
 .heading-date {
   font-size: 9px;
   margin: 0;
-  color: rgb(233, 248, 16);
+  color: #62bce6;
 }
 
 .heading-info {
