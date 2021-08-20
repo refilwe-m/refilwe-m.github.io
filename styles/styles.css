@@ -382,7 +382,7 @@ header {
 
 #nav {
   display: inline;
-  background-color: rgb(3, 26, 26);
+  background-color: var(--color-primary);
 }
 
 .nav_icon {
