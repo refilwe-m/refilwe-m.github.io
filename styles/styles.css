@@ -377,6 +377,7 @@ footer li a {
 
 header {
   margin: 0;
+  height: auto;
 }
 
 #nav {
