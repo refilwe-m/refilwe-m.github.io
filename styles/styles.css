@@ -231,6 +231,10 @@ h5 {
   width: 60px;
 }
 
+.navIco{
+  font-size: 2em;
+}
+
 #project-icon {
   display: inline-block;
 }
