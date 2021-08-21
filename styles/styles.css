@@ -321,10 +321,6 @@ footer li a {
     padding-top: 160px;
   }
 
-  .btn {
-    display: block;
-    font-size: 18px;
-  }
   h1 {
     margin: 0 0 8px 0;
     font-size: 20px;
@@ -526,17 +522,15 @@ ul li a {
     width: 40px;
   }
   #profile-pic {
-    width: 15px;
+    width: 16px;
   }
   .navIco {
-    font-size: 1em;
+    font-size: 1.3em;
   }
   #nav {
     display: flex;
   }
-  .fa-bars {
-    font-size: 1em;
-  }
+
   :last-child ul {
     margin-right: 20px;
   }
@@ -557,11 +551,33 @@ ul li a {
   h1 {
     font-size: 15px;
   }
-  .navIco {
-    font-size: 1em;
+  #logo{
+    float: left;
+    margin: 0;
+    margin-left: 20px;
+    display: flex;
+    width: 50px;
   }
-  .fa-bars {
-    font-size: 1em;
+  .navIco {
+    font-size: 1.2em;
+  }
+  #profile-pic{
+    width: 20px;
+  }
+  ul li {padding-right: 15px;}
+}
+
+
+
+@media screen and (min-width: 472px)  and (max-width: 593px)  {
+  h1 {
+    font-size: 18px;
+  }
+  .navIco {
+    font-size: 1.5em;
+  }
+  #profile-pic{
+    width: 28px;
   }
   ul li {padding-right: 15px;}
 }
@@ -571,21 +587,11 @@ ul li a {
     font-size: 28px;
   }
   .navIco {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   ul li {padding-right: 15px;}
-}
-
-@media screen and (min-width: 472px)  and (max-width: 593px)  {
-  h1 {
-    font-size: 18px;
-  }
-  .navIco {
-    font-size: 1em;
-  }
-  ul li {padding-right: 15px;}
-  .fa-bars {
-    font-size: 1em;
+  #profile-pic{
+    width: 28px;
   }
 }
 
