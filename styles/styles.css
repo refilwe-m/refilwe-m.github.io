@@ -19,7 +19,7 @@
     width: 0;
   }
   to {
-    width: 38%;
+    width: 100%;
   }
 }
 
@@ -62,7 +62,7 @@ h1 {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
-  animation: typing 4.5s steps(70), blink-caret 0.75s infinite;
+  animation: typing 1.5s steps(70), blink-caret 0.75s infinite;
 }
 
 h2 {
