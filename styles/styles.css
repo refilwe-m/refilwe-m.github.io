@@ -503,6 +503,10 @@ ul li a {
   #landing {
     padding: 6px 0;
   }
+  .flip-card {
+    width:100%;
+  }  
+  
 }
 
 @media screen and (min-width: 271px) and (max-width:347px){
@@ -563,6 +567,9 @@ ul li a {
     width: 20px;
   }
   ul li {padding-right: 15px;}
+  .flip-card {
+    width:80%;
+  } 
 }
 
 
