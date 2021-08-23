@@ -487,9 +487,7 @@ ul li a {
   #nav {
     display: flex;
   }
-  .fa-bars {
-    font-size: 1em;
-  }
+
   :last-child ul {
     margin-right: 20px;
   }
