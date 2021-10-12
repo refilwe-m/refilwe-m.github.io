@@ -1,3 +1,3 @@
 # Refilwe M. Mashile's CV Website
 
-Link: https://refilwe-m-mashile.github.io/
+[![View Website](https://img.shields.io/badge/RefilweM-View--Site-purple.svg)](https://refilwe-m-mashile.github.io/)
