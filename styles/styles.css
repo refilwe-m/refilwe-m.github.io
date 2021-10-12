@@ -76,6 +76,12 @@ h5 {
   margin-bottom: 0;
 }
 
+hr{
+  width: 60%;
+  size: 2;
+  margin-top: 30px;
+}
+
 #box {
   width: 70%;
   display: inline-block;
@@ -235,7 +241,7 @@ h5 {
   font-size: 2em;
 }
 
-#project-icon {
+.project-icon {
   display: inline-block;
 }
 section {
