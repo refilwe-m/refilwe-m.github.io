@@ -608,3 +608,40 @@ ul li a {
 
 
 
+/* Portfolio Banner Styles */
+#portfolio-banner {
+  background: linear-gradient(135deg, #f0627a, #bb026e);
+  color: white;
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#portfolio-banner p {
+  margin: 0;
+}
+
+#portfolio-banner a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+#portfolio-banner a:hover {
+  color: #ffeb3b;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 479px) {
+  #portfolio-banner {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+}
+
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);

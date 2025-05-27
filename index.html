@@ -11,18 +11,18 @@
   <title>Refilwe M. Mashile | Website</title>
   <link rel="icon" href="./icons/R_logo.ico" />
   <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script>
-  window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(async function(OneSignal) {
-    await OneSignal.init({
-      appId: "edfae629-0b9c-4a0c-95c7-5921d088e649",
-      safari_web_id: "web.onesignal.auto.0e007fdd-4c29-4efe-85fd-d9ae8478b7ea",
-      notifyButton: {
-        enable: true,
-      },
+  <script>
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function (OneSignal) {
+      await OneSignal.init({
+        appId: "edfae629-0b9c-4a0c-95c7-5921d088e649",
+        safari_web_id: "web.onesignal.auto.0e007fdd-4c29-4efe-85fd-d9ae8478b7ea",
+        notifyButton: {
+          enable: true,
+        },
+      });
     });
-  });
-</script>
+  </script>
 </head>
 
 <body>
@@ -30,6 +30,10 @@
   <div id="fb-root"></div>
   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v20.0"
     nonce="qUK0Mq05"></script>
+  <div id="portfolio-banner">
+    <p>This is my old portfolio from 2020. Check out my latest work as a Software Engineer <a
+        href="https://refilwe.dev/portfolio" target="_blank">refilwe.dev/portfolio</a>.</p>
+  </div>
   <header>
     <div id="nav">
       <a href="index.html"><img id="logo" src="images/logo.png" alt="Refilwe's logo" /></a>
