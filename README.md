@@ -2,9 +2,7 @@
 
 ###
 
-<div align="center" justify="center">
- <img src="https://profile-counter.glitch.me/refilwe-m/count.svg?"  />
-</div>
+I am one of the most active GitHub users in South Africa: [![committers.top badge](https://user-badge.committers.top/south_africa/refilwe-m.svg)](https://user-badge.committers.top/south_africa/refilwe-m)
 
 ###
 
